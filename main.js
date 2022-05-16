@@ -1,5 +1,5 @@
 let donutCount = 0;
-let donutMultiply = 0;
+let donutMultiply = 2;
 
 
 function add () {
@@ -10,8 +10,9 @@ function add () {
 }
 
 function multiply() {
-    donutMultiply = donutCount * 2
+    donutMultiply = donutMultiply * 2
     document.getElementById("multiply-span").textContent = donutMultiply;
     console.log(multiply)
 }
+
 
