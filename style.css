@@ -43,27 +43,12 @@ a > .donut-img {
     margin: 20px;
 }
 
-/*.rotate {*/
-/*    animation: rotation 5s infinite linear;*/
-/*}*/
-
-/*@keyframes rotation {*/
-/*    from {*/
-/*        transform: rotate(0deg);*/
-/*    }*/
-/*    to {*/
-/*        transform: rotate(359deg);*/
-/*    }*/
-/*}*/
-
 
 img {
     width: 250px;
 }
 
-/******************************************
-/* ANIMATION STYLES
-/*******************************************/
+
 @-webkit-keyframes spin-me{
     0% {
         -webkit-transform: rotateZ(0deg);
