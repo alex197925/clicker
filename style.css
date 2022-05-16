@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: antiquewhite;
 }
 
 .container {
@@ -10,4 +11,10 @@ body {
     align-items: center;
     flex-direction: column;
     height: 100vh;
+}
+
+a > .donut-img {
+    width: 200px;
+    cursor: pointer;
+    margin-bottom: 10px;
 }
