@@ -12,19 +12,39 @@
 
 
 
-<div class="container">
-    <a href="#" onclick="add()"><img class="donut-img" src="image/donut.png" alt="donut"></a>
+<div class="container-fluid">
 <!--    Increase-->
 <div class="increase">
-    Increase: <span id="score-span">0</span>
+<!--    <a href="#" onclick="add()"><img class="donut-img rotate" src="image/donut.png" alt="donut"></a>-->
+    <a href="#" onclick="add()"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/26344/bike_wheel-512.png" class="thing-to-spin"></a>
+    Donuts: <span id="score-span">0</span>
 
 </div>
 
-<!--    Multiply-->
-    <div class="multiply">
-        <button onclick="multiply()" type="button" class="btn btn-secondary mt-2">Click to Multiply</button>
-        Multiply: <span id="multiply-span">0</span>
+
+    <div class="flex-items">
+
+        <!--    Multiply-->
+        <div class="multiply">
+            <button onclick="multiply()" type="button" class="btn btn-secondary mt-2">Click to Multiply</button>
+            Multiply: <span id="multiply-span">0</span>
+        </div>
+        <div class="multiply">
+            <button onclick="multiply()" type="button" class="btn btn-secondary mt-2">Click to Multiply</button>
+            Multiply: <span id="multiply-span">0</span>
+        </div>
+        <div class="multiply">
+            <button onclick="multiply()" type="button" class="btn btn-secondary mt-2">Click to Multiply</button>
+            Multiply: <span id="multiply-span">0</span>
+        </div>
+        <div class="multiply">
+            <button onclick="multiply()" type="button" class="btn btn-secondary mt-2">Click to Multiply</button>
+            Multiply: <span id="multiply-span">0</span>
+        </div>
+
     </div>
+
+
 
 </div>
 
