@@ -1,17 +1,25 @@
-let donutCount = 0;
-let donutMultiply = 2;
+let wheelCount = 0;
+let whellMultiply = 2;
+let whellReset = 0;
 
 
 function add () {
-    donutCount = donutCount + 1
-    document.getElementById("score-span").textContent = donutCount;
+    wheelCount = wheelCount + 1
+    document.getElementById("score-span").textContent = wheelCount;
     console.log(add)
 
 }
 
+function myFunction(){
+    document.getElementById("score-span").textContent = whellReset;
+    console.log("reset")
+
+}
+
+
 function multiply() {
-    donutMultiply = donutMultiply * 2
-    document.getElementById("multiply-span").textContent = donutMultiply;
+    whellMultiply = whellMultiply * 2
+    document.getElementById("multiply-span").textContent = whellMultiply;
     console.log(multiply)
 }
 
