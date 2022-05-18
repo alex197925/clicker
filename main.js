@@ -9,6 +9,7 @@ function update() {
     document.getElementById("text").value =  cookiesCount;
     document.title = cookiesCount + " Cookies";
     document.getElementById("amountAutoClick").innerHTML = "You are " + autoClick + " Auto Clickers";
+    document.getElementById("costAutoClick").innerHTML = ((autoClick + 1) * 12) + " Cookies";
 }
 setInterval(timer, 1000)
 
