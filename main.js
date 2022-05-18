@@ -1,26 +1,35 @@
-let wheelCount = 0;
-let whellMultiply = 2;
-let whellReset = 0;
+
+let cookiesCount = 0;
+let autoClick = 0;
 
 
-function add () {
-    wheelCount = wheelCount + 1
-    document.getElementById("score-span").textContent = wheelCount;
-    console.log(add)
 
+
+function update() {
+    document.getElementById("text").value =  cookiesCount;
+    document.title = cookiesCount + " Cookies";
+    document.getElementById("amountAutoClick").innerHTML = "You are " + autoClick + " Auto Clickers";
+}
+setInterval(timer, 1000)
+
+
+function timer() {
+    cookiesCount = cookiesCount + autoClick;
+    update();
 }
 
-function myFunction(){
-    document.getElementById("score-span").textContent = whellReset;
-    console.log("reset")
-
+function add() {
+    cookiesCount = cookiesCount + 1;
+update()
 }
 
 
-function multiply() {
-    whellMultiply = whellMultiply * 2
-    document.getElementById("multiply-span").textContent = whellMultiply;
-    console.log(multiply)
+function buyAutoClick() {
+    if(cookiesCount >= ((autoClick + 1) * 12)) {
+     cookiesCount = cookiesCount - ((autoClick + 1) * 12);
+     autoClick = autoClick + 1;
+update()
+    }
 }
 
 
